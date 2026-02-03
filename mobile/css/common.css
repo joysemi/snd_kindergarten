@@ -182,11 +182,17 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+
+     /* iOS Safari 전화번호 자동 링크 방지 */
+    -webkit-touch-callout: none;
+    -webkit-user-select: text;
+    -webkit-tap-highlight-color: transparent;
 }
 .footer_title{
     width: 147px;
     height: 30px;
-    margin-left: 16px;
+    margin-left: 32px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -200,6 +206,10 @@ footer{
 .footer_info{
     font: 400 14px/21px 'Pretendard';
     text-indent: 16px;
-    color: white;
+}
+.footer_info span {
+    display: inline-block;                
+    color: #ffffff !important;            
+    -webkit-text-fill-color: #ffffff !important; 
 }
 
