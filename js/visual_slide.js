@@ -44,11 +44,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     //자동재생과 멈춤
     function autoPlay(){
+        stopAutoPlay()
         timer=setInterval(clickNextBtn, 4000)
     }
 
     function stopAutoPlay(){
-        clearInterval(timer)
+        if(timer){
+            clearInterval(timer)
+            timer=null;
+        }
     }
 
 
