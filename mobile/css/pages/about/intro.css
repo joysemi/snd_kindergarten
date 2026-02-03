@@ -1,0 +1,268 @@
+/* 서브비쥬얼영역시작 */
+div#sub_visual_wrap{
+    width: 100%;
+    height: 125px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+section.sub_visual{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    background: url('/snd_kindergarten/mobile/images/sub_images/sub_visual.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section.sub_visual h3{
+    font: 600 20px 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    margin-top: 35px;
+}
+/* 메뉴바로가기 */
+div#menu{
+    width: 100%;
+    height: 28px;
+    border-bottom: solid 1px gray;
+    display: flex;
+    flex-direction: row;
+}
+/* 컨텐츠영역시작 */
+/* 원훈 및 교육목표 */
+section#motto_goals{
+    width: 100%;
+    height: 100%;
+    padding: 36px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: yellow;
+}
+h2.motto_goals_title{
+    font: 600 20px/22px 'Pretendard';
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 57px;
+}
+.motto_goals_title::after{
+    content:'';
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #ACB66D;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    margin-left: -3px;
+}
+.motto_title{
+    width: 100%;
+    height: auto;
+    font: 600 24px/22px 'Pretendard';
+    text-align: center;
+    color: #643206;
+    margin-bottom: 40px;
+}
+div#goals_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} 
+ul.goals_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    gap: 30px;
+}
+ul.goals_list li{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.goal_item_title{
+    width: 40%;
+    height: 30px;
+    background-color: #E7EDE8;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.goals_list li:nth-child(2) .goal_item_title {
+    background-color: #F8DFBE;
+}
+.goals_list li:nth-child(3) .goal_item_title {
+    background-color: #CDD3A7;
+}
+.goal_item_title h4{
+    font: 600 16px/22px 'Pretendard';
+    text-align: center;
+}
+.goal_item_box{
+    width: 90%;
+    height: 80px;
+    border: solid 1px #E1E1E1;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.goal_item_box p{
+    font: 500 16px/22px 'Pretendard';
+} 
+
+
+/* 원목 및 원화 */
+div#snd_symbol_wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 24vh;
+    background-color: red;
+}
+section#snd_symbol{
+    width: 1416px;
+    height: 100%;
+    padding: 0px 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+div#symbol_box_wrap{
+    width: 100%;
+    height: 549px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.symbol_box{
+    width: 49.15%;
+    height: 100%;
+}
+.symbol_box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.symbol_box p{
+    font: normal 1.5em/1.66em 'Pretendard';
+}
+.symbol_box p:nth-child(3){
+    color: #919191;
+}
+/*로고*/
+div#logo_info_wrap{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 24vh;
+}
+section#logo_info{
+    width: 1416px;  
+    height: 100%;
+    margin: 0px 2%;
+}
+div#logo_info_box{
+    width: 100%;
+    height: 100%;
+    border: solid 2px #716A6A;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo_info img{
+    width: 470px;
+    height: auto;
+}
+#logo_info p{
+    font: normal 1.5em/1.66em 'Pretendard';
+    color: #333333;
+    text-align: center;
+}
+/*원가*/
+div#snd_song_wrap{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 24vh;
+}
+section#snd_song{
+    width: 1416px;  
+    height: 100%;
+    margin: 0px 2%;
+}
+div#snd_song_box{
+    width: 100%;
+    height: 100%;
+    border: solid 2px #716A6A;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#snd_song_box p{
+    font: normal 1.5em/1.66em 'Pretendard';
+    color: #333333;
+    text-align: center;
+}
+#snd_song_box p span{
+    display: block;
+    color: #8B9A2C;
+}
+button#song_download_btn{
+    width: 170px;
+    height: 65px;
+    border: solid 2px #000000;
+    border-radius: 65px;
+    background-color: #ffffff;
+    font: 500 14px/27px 'Pretendard';
+    cursor: pointer;
+}
+div#bottom_img{
+    width: 100%;
+    height: 380PX;
+    background: url('/snd_kindergarten/images/sub_images/sub_bottom_img.png') no-repeat center;
+    background-size: cover;
+}
+/* 컨텐츠영역 끝 */
+
+@media screen and (orientation: landscape) {
+    div#sub_visual_wrap{
+        height: 55vh;
+    }
+}

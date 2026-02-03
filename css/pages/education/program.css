@@ -1,0 +1,391 @@
+/* 서브비쥬얼영역 시작 */
+section#sub_visual{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+h2.sub_visual_title{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    font: 600 3.75em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+#subVideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px   ;
+    object-fit: cover;
+    z-index: 1;
+}
+/* 서브비쥬얼영역끝 */
+
+/* 컨텐츠영역시작 */
+main#contents_wrap{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 패밀리 데이: 소개 */
+div#family_pro_intro_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6%;
+}
+section#family_pro_intro{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    padding: 8% 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h2.title{
+    font: bold 2.375em 'Pretendard';
+    color: #ACB66D;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+h2.title::after{
+    content:'';
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #ACB66D;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -6px;
+}
+p.family_pro_text{
+    font: normal 1.5em/1.66em 'Pretendard';
+    color: #333333;
+    text-align: center;
+    margin: 8% 0;
+}
+#family_pro_intro button{
+    width: 137px;
+    height: 44px;
+    color: white;
+    background-color: #A2AE5C;
+    border: none;
+    border-radius: 52px;
+    font: 500 14px 'Pretendard';
+    text-align: center;
+    cursor: pointer;
+}
+div#pro_background{
+    width: 100%;
+    height: 344px;
+    background: url('/snd_kindergarten/images/sub_images/pro_background.png') no-repeat center;
+    background-size: cover;
+}
+/* 패밀리 데이: 소개 */
+
+/* 패밀리 데이: 활동 */
+div#family_pro_item_wrap{
+    width: 100%;  
+    height: 100%;
+    /* height: 1760px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section#family_pro_item{
+    width: 1416px;
+    height: 100%;
+    padding: 8% 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.family_pro_item_title{
+    width: 600px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font: bold 38px 'Pretendard';
+    text-align: center;
+    margin-bottom: 8%;
+}
+.family_pro_item_title::before{
+    content:'';
+    width: 31px;
+    height: 44px;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_gallery_icon_01.png') no-repeat center;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.family_pro_item_title::after{
+    content:'';
+    width: 46px;
+    height: 55px;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_gallery_icon_02.png') no-repeat center;
+    position: absolute;
+    top: -8px;
+    right: 50px;
+}
+.pro_item_container{
+    width: 100%;
+    height: 1584px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro_item_box{
+    width: 100%;
+    height: 360px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* 탐험/Adventure  */
+.pro_item_box h4{
+    width: 100%;
+    height: 100%;
+    background-color: #D5DAB5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+/* 만들기/Creative */
+.pro_item_box:nth-child(2) h4{
+    background-color: #F8E3C8;
+}
+/* 배움/Learning */
+.pro_item_box:nth-child(3) h4{
+    background-color: #EDF1EE;
+}
+/* 휴식/Healing */
+.pro_item_box:nth-child(4) h4{
+    background-color: #F9D8D6;
+}
+
+h4 span{
+  display: block; 
+  font: 600 2.25em 'Pretendard';
+  text-align: center;
+}
+ul.pro_item_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+.pro_item_list li{
+    width: 100%;
+    height: 100%;
+    border-left: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.adventure_list{
+    border: solid 2px #D5DAB5;
+}
+.creative_list{
+    border: solid 2px #F8E3C8;
+}
+.learning_list{
+    border: solid 2px #EDF1EE;
+}
+.healing_list{
+    border: solid 2px #F9D8D6;
+}
+.pro_item_list img{
+    width: 100%;
+    height: auto;
+}
+.pro_item_list h5{
+    font: 600 22px/20px 'Pretendard';
+    margin-top: 26px;
+    margin-left: 10px;
+}
+.pro_item_list p {
+    font: 400 14px/22px 'Pretendard';
+    margin-top: 26px;
+    margin-left: 10px;
+}
+/* 패밀리 데이: 활동 */
+
+/* 패밀리 데이: 안내 */
+div#family_day_info_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #F8F3ED;
+}
+section#family_day_info{
+    width: 1416px;
+    height: 100%;
+    padding: 8% 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.info_imgbox{
+    width: 54.59%;
+    height: 70.37%;
+}
+.info_imgbox img{
+    width: 100%;
+    height: auto;
+}
+.info_txtbox{
+    width: 36.29%;
+    height: 70.37%;
+    display: flex;
+    flex-direction: column;
+}
+.info_txtbox h3{
+    font: bold 2.375em 'Pretendard';
+    margin-bottom: 8%;
+}
+.info_list{
+    margin-bottom: 10%;
+}
+.info_list li{
+    font: 400 1.375em/1.81em 'Pretendard';
+}
+.info_list span{
+    font-weight: 600;
+}
+.family_day_notice h4{
+    font: 400 1em/1.68em 'Pretendard';
+    color: #E94035;
+}
+.family_day_notice li{
+    font: 400 1em/1.68em 'Pretendard';
+    color: #919191;
+}
+/* 패밀리 데이: 안내 */
+
+/* 신난다 숲 가족 갤러리_스와이퍼 */
+div#family_pro_gallery_wrap{
+    width: 100%;
+    height: 100%;
+}
+section#family_pro_gallery{
+    width: 100%;
+    height: 100%;
+    padding: 8% 2%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.family_pro_gallery_title{
+    width: 600px;
+    position: relative;
+    font: bold 38px 'Pretendard';
+    text-align: center;
+}
+.family_pro_gallery_title::before{
+    content:'';
+    width: 31px;
+    height: 44px;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_gallery_icon_01.png') no-repeat center;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.family_pro_gallery_title::after{
+    content:'';
+    width: 46px;
+    height: 55px;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_gallery_icon_02.png') no-repeat center;
+    position: absolute;
+    top: -8px;
+    right: 50px;
+}
+.family_gallery_swiper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 8%;
+}
+.gallery_slide_list .swiper-slide {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery_slide_list img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 10;
+}
+.swiper-button-prev{
+    background: url('/snd_kindergarten/images/slide_prev_btn.png') no-repeat center;
+    left: 10px;
+}
+.swiper-button-next{
+    background: url('/snd_kindergarten/images/slide_next_btn.png') no-repeat center;
+    right: 10px;
+}
+/* Swiper 기본 SVG 아이콘 제거 */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+    display: none;
+    }
+
+/* 컨텐츠영역끝 */
+
+/* 반응형 */
+@media screen and (max-width:1280px){
+    section#family_pro_intro,.pro_item_box,.info_txtbox{
+        font-size: 14px;  
+    }
+}
+@media screen and (max-width:980px){
+    .info_txtbox{
+        font-size: 12px;  
+    }
+}
+/* 반응형 */

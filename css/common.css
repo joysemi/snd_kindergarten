@@ -1,0 +1,244 @@
+/* 기본설정시작 */
+body,html{
+    height: 100%;
+   
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+}
+ul.skipmenu_list li a:focus{
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    background: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+/* 기본설정끝 */
+
+/* 상단영역시작 */
+div#header_wrap{
+    width: 100%;
+    height: 130px; /* 열렸을 때 높이 380px, 닫혔을 때 높이 130px */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%,rgba(255, 255, 255, 0.1) 30px, rgba(0, 0, 0, 0.3) 31px, rgba(0, 0, 0, 0.3) 130px,rgb(0, 0, 0, 0.7) 131px,rgba(0, 0, 0, 0.7) 100%);
+    position: absolute;
+    left: 0px;   
+    top: 0px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 10;
+}
+header{
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    min-width:768px; 
+}
+
+/* 로고 */
+h1#logo{
+    width: 265px;
+    height: 50px;
+    background: url('/snd_kindergarten/images/logo_sinnanda.svg') no-repeat; 
+    /* background-size: contain; */
+    position: absolute;
+    top: 55px;
+    left: 12px;
+    font: 600 32px/50px 'Pretendard';
+    color: white;
+    text-indent: 56px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+}
+h1#logo a {
+    color: white;
+}
+/* 로고 */
+
+/* 보조메뉴 */
+div#topmenu{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+ul.topmenu_list{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 4.5%;
+}
+.topmenu_list li{
+    width: auto;
+    height: 100%;
+    display: flex;            
+    align-items: center;       
+}
+.topmenu_list li:nth-child(2):before{
+    content: '';
+    width: 2px;
+    height: 10px;
+    margin-right: 20px;
+    background-color: #ffffff;
+}
+.topmenu_list li:nth-child(2):after{
+    content: '';
+    width: 2px;
+    height: 10px;
+    margin-left: 20px;
+    background-color: #ffffff;
+}
+.topmenu_list a{
+    font: normal 0.75em/2em 'Pretendard';
+    color: #ffffff;
+}
+.topmenu_list a:hover{
+    color: orange;
+}
+/* 보조메뉴 */
+
+/* 메인메뉴 */
+nav#mainmenu{
+    width: 59.375%;
+    height: 50px;
+    position: absolute;
+    right: 12px;
+    top: 55px;
+}
+ul#mainmenu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul#mainmenu_list>li>a{
+    font: bold 18px/24px 'Pretendard';
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+    position:relative;
+    top:0px;
+    left:0px; 
+    transition:0.2s ease-out; 
+}
+ul#mainmenu_list>li{
+    width: 20%;
+    position: relative;
+    left: 0px;
+    top: 0px;    
+    text-align:center;
+    cursor: pointer;
+}
+ul#mainmenu_list>li::after{
+    content: '';
+    display: block;
+    width: 100%;   
+    height: 4px; 
+    background: orange;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    transform:scale(0,1); 
+    transition:0.2s ease-out; 
+} 
+ul#mainmenu_list>li.selected>a{
+    top:-10px; 
+}
+ul#mainmenu_list>li.selected>ul.submenu_list{
+    background-color: rgba(0,0,0,0.8)
+}
+ul#mainmenu_list>li.selected::after{
+    transform:scale(1,1)
+}
+ul.submenu_list{
+    width:100%;
+    height: 380px;
+    position: absolute;
+    top: 63px;
+    left: 0px;
+    opacity:0;
+    display:none;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+ul.submenu_list li{
+    margin-bottom: 10px;
+}
+ul.submenu_list li a{
+    color: white;
+    font: 300 14px 'Pretendard';
+    opacity: 0.4;
+    transition: 0.2s ease-out; 
+}
+ul.submenu_list li:hover a{
+    opacity: 1;
+    color: orange;
+}
+/* 메인메뉴 */
+/* 상단영역끝 */
+
+
+/* 하단영역시작 */
+div#footer_wrap{
+    width: 100%;
+    height: 235px;
+    background-color: #74471F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width:768px; 
+}
+footer#footer_section{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer#footer_section p{
+    font: 400 1em/1.6875em 'Pretendard';
+    color: #ffffff;
+}
+footer#footer_section p:last-child{
+    text-align: end;
+}
+/* 하단영역끝 */
+
+
+/* 반응형 */
+@media screen and (max-width:1280px){
+
+    footer#footer_section{
+        font-size: 14px;
+        padding: 0 4%;
+    }
+    
+}
+/* 반응형 */

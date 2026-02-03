@@ -1,0 +1,654 @@
+/* 비쥬얼영역시작 */
+section#visual{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+ul#visual_list li{
+    width: 100%;
+    height: 100%;
+    background: url('/snd_kindergarten/images/visual.png') no-repeat center;
+    background-size: cover;
+}
+ul#visual_list li:nth-child(2){
+    background: url('/snd_kindergarten/images/visual_01.png') no-repeat center;
+    background-size: cover;
+}
+ul#visual_list li:nth-child(3){
+    background: url('/snd_kindergarten/images/visual_02.png') no-repeat center;
+    background-size: cover;
+}
+ul#visual_list li:nth-child(4){
+    background: url('/snd_kindergarten/images/visual_03.png') no-repeat center;
+    background-size: cover;
+}
+.visual_title{
+    font: 600 5.6vw 'Pretendard'; /* 20px/22px */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    text-align: center;
+}
+.slide_btn_list{
+    width: 60px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.slide_btn_list li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: white;
+}
+.slide_btn_list li.selected{
+    background-color: orange;
+    cursor: pointer;
+}
+/* 비쥬얼영역끝 */
+
+/* 원형메뉴 */
+section#circle_menu{
+    width: 100vw;
+    height: 48vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ul.circle_menu_list{
+    width: 73.3vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 6vw;
+    justify-items: center;
+    align-items: center; 
+}
+.circle_menu_list li{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: #CBDACF url('/snd_kindergarten/mobile/images/circle_day.png') no-repeat center 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.circle_menu_list li:nth-child(2){
+    background: #F3C993 url('/snd_kindergarten/mobile/images/circle_place.png') no-repeat center 26px;
+}
+.circle_menu_list li:nth-child(3){
+    background: #ACB66D  url('/snd_kindergarten/mobile/images/circle_pro.png') no-repeat center 26px;
+}
+.circle_menu_list li:nth-child(4){
+    background: #967253 url('/snd_kindergarten/mobile/images/circle_join.png') no-repeat center 26px;
+}
+.circle_menu_list li a{   
+    font: 500 16px/22px 'Pretendard';
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+/* 숲공간 */
+section#forest_space{
+    width: 100vw;
+    height: 63vw;
+    padding: 4vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+}
+.forest_space_info{
+    width: 91.11vw;
+    height: 76px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.forest_space_title{
+    font: 600 20px/22px 'Pretendard';
+    margin-bottom: 2vw;
+}
+.forest_space_des{
+    font: 400 14px/21px 'Pretendard';
+    letter-spacing: -0.5px;
+    color: #555555;
+}
+.btn_view_more{
+    width: 35px;
+    height: 10px;
+    border: none;
+    text-indent: -9999px;
+    background: url('/snd_kindergarten/mobile/images/view_more_icon.png') no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.forest_space_gallery{
+    width: 91.11vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+/* 숲공간 탭메뉴 */
+.forest_space_menu{
+    width: 91.11vw;
+    height: 30px;
+}
+.forest_space_menu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 0.5vw;
+}
+.forest_space_menu_list li{
+    width: 78px;
+    height: 100%;
+    border: solid 1px #D2C2B4;
+    border-radius: 15px;
+    background-color: white;
+    font: 400 14px/21px 'Pretendard';
+    line-height: 30px;
+    text-align: center;
+}
+.forest_space_menu_list li.selected{
+    border-color: #8E613A;
+    background-color: #8E613A;
+}
+.forest_space_menu_list li.selected a{
+    color: white;
+}
+
+/* 패밀리프로그램 */
+section#family_program{
+    width: 100vw;
+    height: 445px;
+    padding: 4vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+div#family_pro_intro{
+    width: 100vw;
+    height: 200px;
+    box-sizing: border-box;
+    background-color: #F8F3ED;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.family_pro_info{
+    width: 91.11vw;
+    height: 126px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.family_pro_title{
+    font: 600 20px/22px 'Pretendard';
+    margin-bottom: 2vw;
+}
+.family_pro_des{
+    font: 400 14px/21px 'Pretendard';
+    letter-spacing: -0.5px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+.btn_join{
+    width: 92px;
+    height: 30px;
+    border: none;
+    text-indent: -9999px;
+    background: url('/snd_kindergarten/mobile/images/family_btn.png') no-repeat;
+}
+.intro_img{
+    width: 130px;
+    height: 80px;
+    border-radius: 5px;
+    background: url('/snd_kindergarten/images/family_pro_img.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+div#family_pro_gallery{
+    width: 91.11vw;
+    height: 210px;
+    padding: 4vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+.family_pro_category{
+    width: 91.11vw;
+    height: 30px;
+}
+.family_pro_category_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1vw;
+}
+.family_pro_category_list li{
+    width: 78px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #D5DAB5;
+    font: 400 14px/21px 'Pretendard';
+    letter-spacing: -0.5px;
+    line-height: 30px;
+    text-align: center;
+}
+.family_pro_category_list li:nth-child(2){
+    background: #F8E3C8;
+}
+.family_pro_category_list li:nth-child(3){
+    background: #EDF1F0;
+}
+.family_pro_category_list li:nth-child(4){
+    background: #F8DEDC;
+}
+.family_pro_container{
+    width: 91.11vw;
+    height: 166px;
+}
+.family_pro_item_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.family_pro_item_list li{
+    width: 48%;
+    height: auto;
+}
+.family_pro_item h4{
+    font: 500 16px/22px 'Pretendard';
+}
+.family_pro_item p{
+    font: 400 12px/21px 'Pretendard';
+    letter-spacing: -0.5px;
+    color: #555555;
+}
+.family_pro_item img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* 프뢰벨이미지 */
+div#froebel_img_wrap{
+    width: 100vw;
+    height: 40vw;
+    min-height: 200px;
+    background: url('/snd_kindergarten/images/froebel_img.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6vw;
+}
+div#froebel_img_wrap p{
+    font: 400 16px/22px 'Pretendard';
+    color: white;
+    text-align: center;
+}
+
+/* 공지사항 */
+section#notice{
+    width: 100vw;
+    height: 177px;
+    padding: 4vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.notice_menu{
+    width: 91.11vw;
+    height: 30px;
+}
+.notice_menu_list{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #E5EDE7;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.notice_menu_list li{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    font: 500 16px/22px 'Pretendard';
+    line-height: 30px;
+    text-align: center;
+}
+.notice_menu_list li.selected{
+    background-color: #9BCBA7;
+}
+.notice_menu_list li.selected a{
+    color: white;
+}
+.family_pro_menu_list li:nth-child(2){
+    background: #F8E3C8;
+}
+
+div.notice_info_box{
+    width: 91.11vw;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+ul.notice_info_list{
+    width: 100%;
+    height: 115px;
+    border: solid 1px #E1E1E1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.notice_info{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.notice_info:nth-child(2)::before{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: #E1E1E1;
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 0px;
+}
+.notice_info:nth-child(2)::after{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: #E1E1E1;
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+}
+.notice_info a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+.notice_info h4{
+    font: 400 14px/22px 'Pretendard';
+    letter-spacing: -0.5px;
+}
+.notice_info p{
+    font: 400 12px/21px 'Pretendard';
+    color: #555555;
+}
+
+/* 행사일정 */
+section#event{
+    width: 100vw;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+.event_title{
+    width: 91.11vw;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.event_title h2{
+    font: 600 20px/22px 'Pretendard';
+    text-indent: 10px;
+}
+.btn_view_more{
+    width: 35px;
+    height: 10px;
+    border: none;
+    text-indent: -9999px;
+    background: url('/snd_kindergarten/mobile/images/view_more_icon.png') no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.event_box{
+    width: 91.11vw;
+    height: 142px;
+    border: solid 1px #E1E1E1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px 20px;
+    box-sizing: border-box;
+}
+.event_plan_nav{
+    width: 100%;
+    height: 30px;
+    background-color: #E5EDE7;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.event_plan_nav span{
+    font: 400 14px/21px 'Pretendard';
+    text-align: center;
+}
+.event_nav_btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #E5EDE7;
+    margin: 0px 10px;
+    font: 400 14px/21px 'Pretendard';
+    color: #555555;
+}
+.event_plan_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.event_plan_list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 8px;
+}
+.event_date{
+    width: 62px;
+    height: 18px;
+    border: solid 1px #E1E1E1;
+    border-radius: 9px;
+    text-align: center;
+}
+.event_plan_list li p{
+    font: 400 14px/21px 'Pretendard';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.event_plan_list li:nth-child(2) .event_date{
+    color: #217AEF;
+}
+
+/* 식단 */
+section#meal{
+    width: 100vw;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    margin-bottom: 4vw;
+}
+.meal_title{
+    width: 91.11vw;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.meal_title h2{
+    font: 600 20px/22px 'Pretendard';
+    text-indent: 10px;
+}
+.btn_view_more{
+    width: 35px;
+    height: 10px;
+    border: none;
+    text-indent: -9999px;
+    background: url('/snd_kindergarten/mobile/images/view_more_icon.png') no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.meal_box{
+    width: 91.11vw;
+    height: 200px;
+    border: solid 1px #E1E1E1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px 20px;
+    box-sizing: border-box;
+}
+.meal_plan_nav{
+    width: 100%;
+    height: 30px;
+    background-color: #E5EDE7;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.meal_plan_nav span{
+    font: 400 14px/21px 'Pretendard';
+    text-align: center;
+}
+.meal_nav_btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #E5EDE7;
+    margin: 0px 10px;
+    font: 400 14px/21px 'Pretendard';
+    color: #555555;
+}
+.meal_img_box{
+    width: 100%;
+    height: 137px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vw;
+    align-content: center;
+}
+.meal_img_box p{
+    font: 400 14px/21px 'Pretendard';
+    text-align: center;
+}
+.meal_img_box img{
+    width: 100%;
+    height: auto;
+}
+
+/* 반응형 */
+@media screen and (orientation: landscape) {
+    section#visual{
+        height: 100vh;
+    }
+    section#circle_menu{
+        height: 70vh;
+    }
+    ul.circle_menu_list{
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(1, 1fr); 
+        grid-gap: 4vw;
+    }
+    section#forest_space{
+        height: 46vw;
+    }
+    section#family_program{
+        margin-bottom: 14vw;
+    }
+    .intro_img{
+        width: 30vw;
+        height: 35vh;
+        background-size: cover;
+    }
+}

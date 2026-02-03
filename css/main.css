@@ -1,0 +1,760 @@
+/* 비쥬얼영역시작 */
+div#visual_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+ul#visual_list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px; 
+}
+ul#visual_list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+ul#visual_list li:nth-child(1){
+    background: url('/snd_kindergarten/images/visual.png') no-repeat center;
+    background-size: cover;
+}
+ul#visual_list li:nth-child(2){
+    background: url('/snd_kindergarten/images/visual_01.png') no-repeat center;
+    background-size: cover;
+}
+ul#visual_list li:nth-child(3){
+    background: url('/snd_kindergarten/images/visual_02.png') no-repeat center;
+    background-size: cover;
+}
+ul#visual_list li:nth-child(4){
+    background: url('/snd_kindergarten/images/visual_03.png') no-repeat center;
+    background-size: cover;
+}
+section.visual_txt_box{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 43%;
+    left: 0px;
+}
+h3.visual_title{
+    font: bold 3.875em/1.29em 'Pretendard';
+    color: white;
+    text-align: center;
+    margin-bottom: 0.87em;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.25);
+    position: relative;
+    top: 100px;
+    left: 0px;
+    opacity: 0.3;
+}
+p.visual_text{
+    font: 500 1.125em/1.55em 'Pretendard'; 
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.25);
+    position: relative;
+    top: 100px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+/* 이전버튼/다음버튼 */
+button#prev_btn{
+    width: 48px;
+    height: 48px;
+    background: url('/snd_kindergarten/images/prev_btn.png') no-repeat center;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 6.25vw;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+button#next_btn{
+    width: 48px;
+    height: 48px;
+    background: url('/snd_kindergarten/images/next_btn.png') no-repeat center;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    right: 6.25vw;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+/* 이전버튼/다음버튼 */
+
+/* 슬라이드도트 */
+ul#slide_btn_list{
+    width: 128px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul#slide_btn_list li{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 8px;
+    text-indent: -9999px;
+}
+ul#slide_btn_list li.selected{
+    background-color: orange;
+    cursor: pointer;
+}
+/* 슬라이드도트 */
+/* 비쥬얼영역끝 */
+
+
+/* 컨텐츠영역시작 */
+div#contents_wrap{
+    width:100%;
+    min-height: 800px;
+}
+
+/* 바로가기 원형메뉴 시작 */
+div#circle_menu_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#circle_menu{
+    width: 1280px;
+    height: 100%;
+}
+ul.circle_menu_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-items: center;
+    align-items: center;    
+    padding: 170px 0px;
+}
+ul.circle_menu_list li{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background: url('/snd_kindergarten/images/circle_menu_btn.png') no-repeat center 166px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s ease-out;
+    opacity:0;
+    position: relative;
+    top: 100px;
+    left: 0px;
+}
+.circle_menu_list li:hover {
+  transform: scale(1.1); 
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+ul.circle_menu_list li a{   
+    font: bold 32px/38px 'Pretendard';
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    z-index: 1;
+}
+ul.circle_menu_list li:nth-child(1){
+    background-color: #CBDACF ;
+}
+ul.circle_menu_list li:nth-child(2){
+    background-color: #F3C993 ;
+}
+ul.circle_menu_list li:nth-child(3){
+    background-color: #ACB66D ;
+}
+ul.circle_menu_list li:nth-child(4){
+    background-color: #967253 ;
+}
+/* 바로가기 원형메뉴 끝 */
+
+/* 신난다 숲공간 레이아웃 시작 */
+div#forest_space_wrap{
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 170px;
+}
+section#forest_space{
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.3s ease-out;
+}
+/* 숲공간 탭메뉴 */
+div#forest_space_menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;    
+}
+ul.forest_space_menu_list{
+    width: 520px;
+    height: 100%;
+    border: solid 1px #8f6947;
+    border-radius: 50px;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.forest_space_menu_list li{
+    width: 130px;
+    height: 100%;
+    background-color: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+ul.forest_space_menu_list li.selected{
+    background-color: #8f6947;
+}
+
+ul.forest_space_menu_list li a{
+    font: normal 14px/22px 'Pretendard';
+    color: black;
+}
+ul.forest_space_menu_list li.selected a{
+    color:white;
+}
+/* 숲공간 탭메뉴 */
+
+div#forest_space_box{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div#forest_space_txt_box{
+    width: 31.64%;
+    height: 100%;
+}
+h3.forest_space_title{
+    font: bold 44px/57.2px 'Pretendard';
+    margin-bottom: 12px;
+}
+h3.forest_space_title::before{
+    content:'';
+    width: 26px;
+    height: 3px;
+    background: #2A1604;
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+p.forest_space_text{
+    font: 400 16px/27px 'Pretendard';
+    margin-bottom: 32px;
+    text-align: justify;
+}
+button.view_more_btn{
+    width: 160px;
+    height: 52px;
+    border: solid 2px #2A1604;
+    background-color: white;
+    border-radius: 52px;
+    font: 500 14px 'Pretendard';
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 숲공간 스와이퍼 슬라이드 */
+div.forest_space_img_box{
+    width: 61.64%;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+/* Swiper 한 세트 */
+.swiper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* 사진 감싸는 래퍼 */
+.swiper-wrapper {
+    display: flex;
+}
+/* 슬라이드 아이템 */
+.swiper-slide {
+    width: 100%;
+    border-radius: 5px;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+/* 슬라이드 버튼 */
+.swiper-button-prev,
+.swiper-button-next{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 10;
+}
+.swiper-button-prev{
+    background: url('/snd_kindergarten/images/slide_prev_btn.png') no-repeat center;
+    left: 1%;
+}
+.swiper-button-next{
+    background: url('/snd_kindergarten/images/slide_next_btn.png') no-repeat center;
+    right: 1%;
+}
+/* Swiper 기본 SVG 아이콘 제거 */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+    display: none;
+}
+/* 숲공간 스와이퍼 슬라이드 */
+/* 신난다숲공간 레이아웃 끝 */
+
+/* 프뢰벨 attach 배경 시작 */
+div#froebel_img_wrap{
+    width: 100%;
+    height: 700px;
+    background: url('/snd_kindergarten/images/froebel_img.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+p.froebel_text{
+    font: bold 2em/1.625em 'Pretendard';
+    color: white;
+    text-align: center;
+}
+/* 프뢰벨 attach 배경 끝 */
+
+/* 패밀리데이 프로그램 시작  */
+div#family_pro_wrap{
+    width: 100%;
+    height: 1306px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section#family_pro{
+    width: 1280px;
+    height: 100%;
+    padding: 170px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h3.section_title{
+    font: bold 44px/57.2px 'Pretendard';
+    text-align: center;
+    margin-bottom: 40px;
+}
+div#intro_box{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.3s ease-out;
+}
+div#intro_img_box{
+    width: 47.18%;
+    height: auto;
+    background: url('/snd_kindergarten/images/family_pro_img.png') no-repeat center;
+    border-radius: 4px;
+}
+div#intro_txt_box{
+    width: 47.18%;
+    height: 360px;
+}
+h4.intro_title{
+    font: 600 22px/22px 'Pretendard';
+    margin-bottom: 36px;
+}
+p.intro_text{
+    font: 400 16px/27px 'Pretendard';
+    margin-bottom: 20%;
+    text-align: justify;
+}
+button.join_btn{
+    width: 137px;
+    height: 44px;
+    color: white;
+    background-color: #A2AE5C;
+    border: none;
+    border-radius: 52px;
+    font: 500 14px 'Pretendard';
+    text-align: center;
+    cursor: pointer;
+}
+div#family_pro_list_box{
+    width: 100%;
+    height: auto;
+}
+ul.family_pro_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-items: center;
+    align-items: center;
+    grid-gap: 4.7%;  
+}
+li.family_pro_item{
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.3s ease-out;
+}
+li.family_pro_item img{
+    width: 100%;   
+    border-radius: 4px;
+    margin-bottom: 32px;
+} 
+li.family_pro_item h4{
+    font: 600 22px/22px 'Pretendard';
+    margin-bottom: 20px;
+}
+li.family_pro_item p{
+    font: 400 14px/22px 'Pretendard';
+}
+/* 패밀리데이 프로그램 끝  */
+
+/* 바로가기 정보영역 시작 */
+div#info_wrap{
+    width: 100%;
+    height: 1010px;
+    background-color: #F8F3ED;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section#info_section{
+    width: 1280px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;
+    align-items: center;
+}
+/* 인포큰박스 01,02,03 */
+div.info_large_box{
+    width: 96.79%;
+    height: 652px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.3 ease-out;
+}
+
+/* 공지사항, 가정통신문 */
+div.info_small_box{
+    width: 100%;
+    height: 312px;
+    box-sizing: border-box;
+}
+div.info_title_box{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 14px;
+}
+.info_title{
+    font: 600 20px/20px 'Pretendard';
+    color: #2A1604;
+    margin-left: 5px;
+}
+div.small_contents_box{
+    width: 100%;
+    height: 277px;
+    border: solid 1px #D4CECE;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+ul.small_contents_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+ul.small_contents_list li{
+    font: 400 14px/22px 'Pretendard';
+    text-indent: 36px;
+    margin: -2px 0px;
+}
+ul.small_contents_list li p:first-child{
+    color: #000000;
+}
+ul.small_contents_list li p:last-child{
+    color: #919191;
+}
+ul.small_contents_list li:nth-child(2)::before{
+    content:'';
+    width: 89.34%;
+    height: 2px;
+    background: #D4CECE;
+    display: block;
+    margin: 24px 20px;
+}
+ul.small_contents_list li:nth-child(2)::after{
+    content:'';
+    width: 89.34%;
+    height: 2px;
+    background: #D4CECE;
+    display: block;
+    margin: 24px 20px;
+}
+
+/* 행사일정, 오늘의 식단 */
+div.large_contents_box{
+    width: 100%;
+    height: 618px;
+    border: solid 1px #D4CECE;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.event_calendar{
+    width: 327px;
+    height: 288px;
+    background: url('/snd_kindergarten/images/calendar.png') no-repeat center;
+    margin-bottom: 45px;
+}
+div.event_date_nav{
+    width: 327px;
+    height: 50px;
+    background-color: #E5EDE7;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.event_nav_text{
+    font: 400 16px 'Pretendard';
+    text-align: center;
+}
+.event_nav_text span{
+    font: 500 22px 'Pretendard';
+    text-align: center;
+}
+.event_nav_btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #E5EDE7;
+    margin: 0px 40px;
+    font: 400 22px 'Pretendard';
+    color: #555555;
+}
+div.event_plan{
+    width: 327px;
+    height: 134px;
+}
+ul.event_plan_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+ul.event_plan_list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 8px;
+}
+p.event_date{
+    width: 76px;
+    height: 34px;
+    border: solid 1px #D3C4C4;
+    border-radius: 34px;
+    text-align: center;
+}
+ul.event_plan_list li p{
+    font: 400 16px 'Pretendard';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+div.meal_date_nav{
+    width: 327px;
+    height: 50px;
+    background-color: #E5EDE7;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.event_meal_text{
+    font: 400 16px 'Pretendard';
+    text-align: center;
+}
+.meal_nav_btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #E5EDE7;
+    margin: 0px 30px;
+    font: 400 22px 'Pretendard';
+    color: #555555;
+}
+div.meal_item_box{
+    width: 327px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.meal_item{
+    width: 100%;
+    height: 220px;
+}
+div.meal_item h3{
+    font: 500 14px 'Pretendard';
+    margin-bottom: 6px;
+}
+.meal_item img{
+    width: 100%;
+    height: auto;
+}
+/* 바로가기 정보영역 끝 */
+/* 컨텐츠영역끝 */
+
+/* 반응형 */
+@media screen and (max-width:1280px){
+    section#forest_space,section#family_pro{
+        width: 94%;
+    }
+    div#info_wrap{
+        height: auto;
+        padding: 120px 0px;
+    }
+    section#info_section{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1.5%;
+        padding-bottom: 60px;
+    }
+    div.info_large_box{
+        width: 50%;
+    }
+}
+@media screen and (max-width:980px){
+    section.visual_txt_box{
+        font-size: 12px;
+    }
+    ul.circle_menu_list, ul.family_pro_list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 4%;
+    }
+    section#circle_menu{
+        width: 66.66%;
+    }
+    div#froebel_img_wrap{
+        font-size: 12px;
+        height: 71.42vw;
+    }
+    div#family_pro_wrap{
+        height: 1800px;
+    }
+
+}
+/* 반응형 */

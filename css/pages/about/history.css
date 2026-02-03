@@ -1,0 +1,138 @@
+/* 서브비쥬얼영역 시작 */
+section#sub_visual{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+h2.sub_visual_title{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    font: 600 3.75em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+#subVideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+/* 서브비쥬얼영역끝 */
+
+
+/* 컨텐츠영역시작 */
+main#contents_wrap{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+section.section_inner{
+    width: 1416px;
+    height: 100%;
+    padding: 8% 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+h2.title{
+    font: bold 2.375em 'Pretendard';
+    color: #ACB66D;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+h2.title::after{
+    content:'';
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #ACB66D;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -6px;
+}
+div.history_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h3.sub_title{
+    font: bold 2.375em 'Pretendard';
+    color: #333333;
+    text-align: center;
+    margin-bottom: 8%;
+}
+div.history_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 연혁 각 아이템  */
+div.history_item_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+div.history_item{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 4%;
+    margin-bottom: 70px;
+}
+.year{
+    font: bold 2.375em 'Pretendard';
+}
+.event{
+    width: 77.68%;
+    height: 100%;
+    font: 400 1.5em/1.66em'Pretendard';
+    text-indent: 100px;
+    background-color: #FAE8D2;
+    border-radius: 0px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* 컨텐츠영역 끝 */
+
+
+
+/* 반응형 */
+@media screen and (max-width:1280px){
+   main#contents_wrap{
+    font-size: 14px;
+   }
+}
+/* @media screen and (max-width:980px){
+   
+} */
+/* 반응형 */

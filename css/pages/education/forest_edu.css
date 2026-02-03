@@ -1,0 +1,224 @@
+/* 서브비쥬얼영역 시작 */
+section#sub_visual{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+h2.sub_visual_title{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    font: 600 3.75em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+#subVideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+/* 서브비쥬얼영역끝 */
+
+
+/* 컨텐츠영역시작 */
+main#contents_wrap{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+section.section_inner{
+    width: 1416px;
+    height: 100%;
+    padding: 8% 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+h2.title{
+    font: bold 2.375em 'Pretendard';
+    color: #ACB66D;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+h2.title::after{
+    content:'';
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #ACB66D;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -6px;
+}
+
+/* 사계절 숲교육: 소개 */
+section#forest_edu_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6%;
+}
+p.forest_edu_text{
+    font: normal 1.5em/1.66em 'Pretendard';
+    color: #333333;
+    text-align: center;
+    margin-bottom: 8%;
+}
+div.forest_edu_intro{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro_box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.intro_img_00{
+    width: 50%;
+    height: 100%;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_intro_00.png') no-repeat center;
+    background-size: contain;
+}
+.intro_img_01{
+    width: 50%;
+    height: 100%;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_intro_01.png') no-repeat center;
+    background-size: contain;
+}
+.intro_txt{
+    width: 50%;
+    height: 100%;
+    padding-top: 6%;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+.intro_txt h4{
+    font: bold 1.5em 'Pretendard';
+    margin-bottom: 6%;
+}
+.intro_txt p{
+    width: 83.47%;
+    font: normal 1em/1.6875em 'Pretendard';
+    text-align: justify;
+}
+/* 사계절 숲교육: 소개 */
+
+/* 사계절 숲교육: 갤러리 */
+section#gallery_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery_title::before{
+    content:'';
+    width: 31px;
+    height: 44px;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_gallery_icon_01.png') no-repeat center;
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+.gallery_title{
+    width: 600px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font: bold 38px 'Pretendard';
+    color: #EA7D76;
+    text-align: center;
+    margin-bottom: 8.275%;
+}
+.gallery_title::after{
+    content:'';
+    width: 46px;
+    height: 55px;
+    background: url('/snd_kindergarten/images/sub_images/forest_edu_gallery_icon_02.png') no-repeat center;
+    position: absolute;
+    right: 80px;
+    top: -8px;
+}
+.gallery_box{
+    width: 100%;
+    height: 81.29%;
+}
+ul.gallery_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 14px;
+}
+ul.gallery_list li{
+    width: 100%;
+    height: 100%;
+}
+ul.gallery_list li img{
+    width: 100%;
+    height: auto;
+}
+div#forest_edu_plan{
+    width: 100%;
+    height: 60px;
+    background-color: #ACB66D;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+div#forest_edu_plan a{
+    font: normal 1.5em 'Pretendard';
+    color: #ffffff;
+}
+/* 사계절 숲교육: 갤러리 */
+/* 컨텐츠영역끝 */
+
+
+
+/* 반응형 */
+@media screen and (max-width:1280px){
+    main#contents_wrap{
+        font-size: 14px;
+    }
+    ul.gallery_list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    div.forest_edu_intro{
+        height: 80vh;
+    }
+}
+
+ /* 반응형 */

@@ -1,0 +1,258 @@
+/* 서브비쥬얼영역 시작 */
+section#sub_visual{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+h2.sub_visual_title{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 80px;
+    font: 600 3.75em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+#subVideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+/* 서브비쥬얼영역끝 */
+
+
+/* 컨텐츠영역시작 */
+main#contents_wrap{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+section.section_inner{
+    width: 1416px;
+    height: 100%;
+    padding: 8% 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+h2.title{
+    font: bold 2.375em 'Pretendard';
+    color: #ACB66D;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+h2.title::after{
+    content:'';
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #ACB66D;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -6px;
+}
+div.environment_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h3.sub_title{
+    font: bold 2.375em 'Pretendard';
+    color: #333333;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+/* 신난다 환경 페이지 */
+div#env_contents_wrap{
+    width: 100%;
+    /* 1416px */
+    height: 950px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 40px;
+    border: solid 2px #C9C9C9;
+}
+
+/* 왼쪽메뉴 */
+.sidemenu{
+    width: 16.24%;
+    /* 230px */
+    height: 100%;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+}
+.sidemenu ul li{
+    width: 100%;
+    height: 60px;
+    border-right: solid 1px #C9C9C9;
+    border-bottom: solid 1px #C9C9C9;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.sidemenu a{
+    width: 100%;
+    font: 600 1.125em 'Pretendard';
+    color: #333333;
+    padding: 0 6%;
+    /* text-indent: 8%; */
+}
+.sidemenu li.active{
+    background-color: #ffffff;
+    border-right: none;
+}
+
+
+/* 신난다 환경 본문영역 */
+div.env_container{
+    width: 83.75%; 
+    /* 1186px */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* 메인 이미지 */
+.env_image{
+    width: 69.13%;
+    /* 820px */
+    height: 530px;
+    margin-bottom: 3%;
+}
+.env_image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 이미지 갤러리 */
+.env_gallery{
+    width: 69.13%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-bottom: 4%;
+}
+.env_gallery img{
+    width: 18.78%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition: filter 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
+}
+.env_gallery img.active{
+    border: solid 3px #74471F;
+    filter: brightness(1);
+    transform: scale(1.03); 
+}  
+
+/* 이미지 설명 */
+.env_des{
+    width: 69.13%;
+    height: 125px;
+}
+.env_des h4{
+    font: 600 2em 'Pretendard';
+    margin-bottom: 2%;
+}
+.env_des p{
+    font: 400 1em/1.5em 'Pretendard';
+    color: #444444;
+}
+
+/* 좌우버튼 */
+.btn_prev{
+    width: 48px;
+    height: 48px;
+    background: url('/snd_kindergarten/images/prev_btn.png') no-repeat center;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    left: 5vw;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.btn_next{
+    width: 48px;
+    height: 48px;
+    background: url('/snd_kindergarten/images/next_btn.png') no-repeat center;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    right: 5vw;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+/* 컨텐츠영역 끝 */
+
+
+
+/* 반응형 */
+@media screen and (max-width:1280px){
+   main#contents_wrap{
+    font-size: 14px;
+   }
+   div#env_contents_wrap{
+    height: 70vw;
+   }
+   .env_image, .env_gallery, .env_des{
+    height: auto;
+   }
+   .env_image{
+    margin-bottom: 2vw;
+   }
+   .env_gallery{
+    margin-bottom: 4vw;
+   }
+}
+@media screen and (max-width:980px){
+   main#contents_wrap{
+    font-size: 12px;
+   }
+   div#env_contents_wrap{
+    height: 80vw;
+   }
+   .env_image{
+    margin-bottom: 3vw;
+   }
+   .env_gallery{
+    margin-bottom: 6vw;
+   }
+}
+/* 반응형 */
