@@ -342,12 +342,12 @@
                             <div class="meal_item_box">
                                 <div class="meal_item">
                                     <h3 class="meal_item_title">점심</h3>
-                                    <a href="#;"><img src="/snd_kindergarten/images/lunch.png" alt="점심 이미지"/>
+                                    <a href="#;"><img src="/snd_kindergarten/images/lunch.png" alt="점심 이미지">
                                     </a>
                                 </div>
                                 <div class="meal_item">
                                     <h3 class="meal_item_title">오후간식</h3>
-                                    <a href="#;"><img src="/snd_kindergarten/images/snack food.png" alt="오후간식 이미지"/>
+                                    <a href="#;"><img src="/snd_kindergarten/images/snack_food.png" alt="오후간식 이미지">
                                     </a>
                                 </div>
                             </div>
