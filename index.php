@@ -95,17 +95,17 @@
                     <ul class="circle_menu_list">
                         <li>
                             <a href="#;" class="circle_01" title="신난다 하루 바로가기">
-                               신난다 하루                              
+                               신난다 하루                        
                             </a>
                         </li>
                         <li>
                             <a href="/snd_kindergarten/pages/about/environment.php" class="circle_02" title="신난다 환경 바로가기">
-                               신난다 환경                              
+                               신난다 환경                            
                             </a>
                         </li>
                         <li>
-                            <a href="/snd_kindergarten/pages/education/program.php" class="circle_03" title="특색 프로그램 바로가기">
-                               특색 프로그램                              
+                            <a href="/snd_kindergarten/pages/about/intro.php" class="circle_03" title="신난다 소개 바로가기">
+                                신난다 소개                              
                             </a>
                         </li>
                         <li>
@@ -139,7 +139,7 @@
                             <p class="forest_space_text">
                             ‘옹기종기터 ’에 함께 모여 밥을 먹고, 이야기꽃을 피우며 즐겁게 놀이합니다. 나무 놀이터, 밧줄 놀이터, 창작 놀이터에는 아이들의 웃음소리가 가득합니다.
                             </p>
-                            <button class="view_more_btn">자세히보기</button>
+                            <a href="/snd_kindergarten/pages/education/forest_edu.php" class="view_more_btn">자세히보기</a>
                         </div>
 
                         <!-- 숲공간 스와이퍼 슬라이드 -->
@@ -175,7 +175,7 @@
                             <p class="intro_text">
                             곰돌이 푸가 전하는 모험, 배움, 그리고 사랑의 이야기. 신난다 숲에서 가족 모두가 오감으로 느끼며 함께하는 따뜻한 하루가 펼쳐집니다. 아이들의 친구 ‘곰돌이 푸의 숲속 모험’을 모티브로, 온 가족이 자연과 교감하며 배우고 성장하는 특별한 숲 체험 프로그램에 여러분을 초대합니다.
                             </p>
-                            <button class="join_btn">자세히보기</button>
+                            <a href="/snd_kindergarten/pages/education/program.php" class="view_more_btn">자세히보기</a>
                         </div>
                     </div>
 
