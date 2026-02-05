@@ -137,7 +137,7 @@
                         <div id="forest_space_txt_box">
                             <h3 class="forest_space_title">신난다 숲은요?</h3>
                             <p class="forest_space_text">
-                            ‘옹기종기터 ’에 함께 모여 밥을 먹고, 이야기꽃을 피우며 즐겁게 놀이합니다. 나무 놀이터, 밧줄 놀이터, 창작 놀이터에는 아이들의 웃음소리가 가득합니다.
+                            ‘옹기종기터’에 함께 모여 밥을 먹고, 이야기꽃을 피우며 즐겁게 놀이합니다. 나무 놀이터, 밧줄 놀이터, 창작 놀이터에는 아이들의 웃음소리가 가득합니다.
                             </p>
                             <a href="/snd_kindergarten/pages/education/forest_edu.php" class="view_more_btn">자세히보기</a>
                         </div>
