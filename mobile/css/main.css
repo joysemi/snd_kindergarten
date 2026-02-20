@@ -104,7 +104,7 @@ ul.circle_menu_list{
 /* 숲공간 */
 section#forest_space{
     width: 100vw;
-    height: 63vw;
+    height: auto;
     padding: 4vw 0;
     display: flex;
     flex-direction: column;
@@ -232,10 +232,15 @@ div#family_pro_intro{
     top: 0px;
     right: 0px;
 }
+div#family_pro_intro{
+    height: auto;
+    padding: 4vw 0;
+}
 div#family_pro_gallery{
     width: 91.11vw;
-    height: 210px;
+    height: auto;
     padding: 4vw 0;
+    margin-bottom: 6vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -645,6 +650,9 @@ section#meal{
     }
     section#family_program{
         margin-bottom: 14vw;
+    }
+    div#family_pro_gallery{
+        margin-bottom: 2vw;
     }
     .intro_img{
         width: 30vw;
